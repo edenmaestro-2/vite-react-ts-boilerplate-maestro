@@ -11,7 +11,7 @@ function App() {
       <div className='my-auto mx-auto'>
         <div className=''>
           <p className='italic'>Maestro in development</p>
-          <p className='italic text-slate-400'>This is the boilerplate made for high learning skills, creative website in responsive and processing new tcehnologies for development.</p>
+          <p className='italic text-slate-400'>This is the boilerplate made for high learning skills, creative website in responsive and processing new technologies for development.</p>
 
 
 

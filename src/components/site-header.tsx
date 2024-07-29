@@ -21,7 +21,6 @@ import { Separator } from "@radix-ui/react-dropdown-menu"
 
 
 
-
 export function SiteHeader() {
   return (
     <nav className="bg-black text-white border-gray-200 dark:border-gray-600 dark:bg-gray-900">

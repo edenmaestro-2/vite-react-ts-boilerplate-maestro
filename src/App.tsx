@@ -12,6 +12,7 @@ import CatalogueDetail from "./pages/catalogue-detail/catalogue-detail"
 import Wishlist from "./pages/wishlist/wishlist"
 import Login from "./pages/auth/login"
 import Register from "./pages/auth/register"
+import Quiz from "./pages/quiz/quiz"
 
 
 function App() {
@@ -30,6 +31,7 @@ function App() {
         <Route path="login" element={<Login />} />
         <Route path="register" element={<Register />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/quiz" element={<Quiz />} />
       </Routes>
 
       <TailwindIndicator />

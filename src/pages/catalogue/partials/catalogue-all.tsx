@@ -19,7 +19,6 @@ import Collection from '@/pages/collection/collection'
 import Panier from '@/pages/panier/panier'
 
 
-
 const categories = [
     {
         id: 1,
@@ -83,47 +82,47 @@ const categories = [
     },
 ]
 
-const data = [
-    {
-        goal: 200,
-    },
-    {
-        goal: 300,
-    },
-    {
-        goal: 400,
-    },
-    {
-        goal: 500,
-    },
-    {
-        goal: 600,
-    },
-    {
-        goal: 700,
-    },
-    {
-        goal: 800,
-    },
-    {
-        goal: 900,
-    },
-    {
-        goal: 1000,
-    },
-    {
-        goal: 1100,
-    },
-    {
-        goal: 1200,
-    },
-    {
-        goal: 1300,
-    },
-    {
-        goal: 1400,
-    },
-]
+// const data = [
+//     {
+//         goal: 200,
+//     },
+//     {
+//         goal: 300,
+//     },
+//     {
+//         goal: 400,
+//     },
+//     {
+//         goal: 500,
+//     },
+//     {
+//         goal: 600,
+//     },
+//     {
+//         goal: 700,
+//     },
+//     {
+//         goal: 800,
+//     },
+//     {
+//         goal: 900,
+//     },
+//     {
+//         goal: 1000,
+//     },
+//     {
+//         goal: 1100,
+//     },
+//     {
+//         goal: 1200,
+//     },
+//     {
+//         goal: 1300,
+//     },
+//     {
+//         goal: 1400,
+//     },
+// ]
 
 const marques = [
     {
@@ -360,23 +359,6 @@ const CatalogueAll = () => {
     function onClick(adjustment: number) {
         setGoal(Math.max(200, Math.min(400, goal + adjustment)))
     }
-
-    //     const [product, setProduct] = useState(collectionData);
-    //     const handleBtns = (e) => {
-    //     let word=e.target.value;
-
-    //     if(word === "All"){
-    //       setCategory(collectionData)
-    //     }
-    //     else if(word === "Cars") {
-    //       const filtered = collectionData.filter(item=>item.kind === "Cars");
-    //       setCategory(filtered)
-    //     }
-    //     else if(word === "Views") {
-    //       const filtered = collectionData.filter(item=>item.kind === "Views");
-    //       setCategory(filtered)
-    //     }
-    //   }
 
 
     return (
@@ -632,7 +614,7 @@ const CatalogueAll = () => {
                 </aside>
 
 
-                {/* Catalogue */}
+
                 {/* <div>
                     <div className="bg-white">
                         <div className="mx-auto max-w-2xl px-4  sm:px-6  lg:max-w-7xl lg:px-8">

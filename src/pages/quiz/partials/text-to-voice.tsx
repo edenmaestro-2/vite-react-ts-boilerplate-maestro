@@ -2,7 +2,7 @@ import { useTextToVoice } from "react-speakup";
 // import { Play, Pause, StepForward } from "lucide-react";
 
 const TextToVoice = () => {
-    const { speak, isSpeaking, pause, ref, resume, setVoice, voices } =
+    const { isSpeaking, ref } =
         useTextToVoice<HTMLDivElement>({ pitch: 1, rate: 0.9, volume: 1 });
 
     return (

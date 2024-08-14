@@ -20,8 +20,7 @@ function Stats() {
                     <CardDescription className="w-80 text-white">La clarté dans la vision et la technologie adaptive pour les personnes mnalvoyantes a été notre principale projet durant ses 5 dernières années.  </CardDescription>
                 </CardHeader>
                 <CardContent className="flex flex-col xl:flex-row lg:flex-row gap-6">
-
-                    <Card className="w-full xl:w-1/4 lg:w-1/4  bg-transparent shadow-none text-white">
+                    <Card className="w-full xl:w-1/4 lg:w-1/4  bg-transparent shadow-none border-white text-white">
                         <CardHeader>
                             <CardTitle>8,000+</CardTitle>
                         </CardHeader>
@@ -29,7 +28,7 @@ function Stats() {
                             <p>Le nombre de personnes malvoyantes que nous avons pu aider dans le cadre de notre vente et de nos produits.</p>
                         </CardContent>
                     </Card>
-                    <Card className="w-full xl:w-1/4 lg:w-1/4  bg-transparent shadow-none text-white">
+                    <Card className="w-full xl:w-1/4 lg:w-1/4  bg-transparent shadow-none border-white text-white">
                         <CardHeader>
                             <CardTitle>3%</CardTitle>
                         </CardHeader>
@@ -37,7 +36,7 @@ function Stats() {
                             <p>La hausse de visibilité que nous avons eu en présence des réseaux sociaux et les sites de recherche.</p>
                         </CardContent>
                     </Card>
-                    <Card className="w-full xl:w-1/4 lg:w-1/4  bg-transparent shadow-none text-white">
+                    <Card className="w-full xl:w-1/4 lg:w-1/4  bg-transparent shadow-none border-white text-white">
                         <CardHeader>
                             <CardTitle>Plus que moins</CardTitle>
                         </CardHeader>
@@ -45,7 +44,7 @@ function Stats() {
                             <p>Une attention particulière envers les produits et alternatifs pour les personnes malvoyantes Un plus qui n'était pas assez présent autrefois.</p>
                         </CardContent>
                     </Card>
-                    <Card className="w-full xl:w-1/4 lg:w-1/4  bg-transparent shadow-none text-white">
+                    <Card className="w-full xl:w-1/4 lg:w-1/4  bg-transparent shadow-none border-white text-white">
                         <CardHeader>
                             <CardTitle>77%</CardTitle>
                         </CardHeader>

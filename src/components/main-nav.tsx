@@ -14,7 +14,7 @@ export function MainNav() {
         <span className="inline-block font-bold text-white">{siteConfig.name}</span>
       </Link>
 
-      <nav className="flex gap-6">
+      <nav className="flex gap-6 justify-center">
         <Link
           to="/"
           className={cn(

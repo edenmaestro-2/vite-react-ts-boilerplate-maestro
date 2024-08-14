@@ -17,35 +17,37 @@ import { IconReceipt2 } from '@tabler/icons-react';
 import { IconBasketCheck } from '@tabler/icons-react';
 import { Badge } from "@/components/ui/badge"
 import { Link, NavLink } from "react-router-dom"
-import { Separator } from "@radix-ui/react-dropdown-menu"
+// import { Separator } from "@radix-ui/react-dropdown-menu"
+import { Separator } from "./ui/separator"
+import { ModeToggle } from "./mode-toggle"
 
 
 
 export function SiteHeader() {
   return (
-    <nav className="bg-black text-white border-gray-200 dark:border-gray-600 dark:bg-gray-900">
+    <nav className="bg-black border-gray-200 dark:border-gray-600 dark:bg-gray-900">
       <div className=" w-full flex justify-between justify-items-center content-center  p-4">
         {/* Logo */}
         <NavLink className="flex items-center space-x-3 rtl:space-x-reverse" to={"/"}>
           <ApplicationLogo className="h-2" />
         </NavLink>
         {/* UL MENU */}
-        <div className="flex gap-6 items-center">
+        <div className="flex gap-6 items-center mx-auto">
           <div id="mega-menu-full-cta" className="items-center justify-between xl:flex lg:flex hidden w-full  md:w-auto">
-            <ul className="flex flex-col mt-4 font-medium md:flex-row md:mt-0 md:space-x-8 rtl:space-x-reverse">
-              <NavLink to={"/"}>
+            <ul className="flex flex-col mt-4 font-medium md:flex-row md:mt-0 md:space-x-8 rtl:space-x-reverse ">
+              <NavLink to={"/"} className="text-white">
                 Accueil
               </NavLink>
-              <NavLink to={"/catalogue"}>
+              <NavLink to={"/catalogue"} className="text-white">
                 Catalogue
               </NavLink>
-              <NavLink to={"/about"}>
+              <NavLink to={"/about"} className="text-white">
                 Qui sommes-nous
               </NavLink>
-              <NavLink to={"/blog"}>
+              <NavLink to={"/blog"} className="text-white">
                 Le blog
               </NavLink>
-              <NavLink to={"/contact"}>
+              <NavLink to={"/contact"} className="text-white">
                 Contact
               </NavLink>
               {/* <NavLink to={"/teste"}>
@@ -54,13 +56,14 @@ export function SiteHeader() {
             </ul>
           </div>
         </div>
-        {/* MENU RESPONSIVE */}
+        {/* MENU RESTE */}
         <div className="flex gap-6 items-center">
-          <Input />
           <div className="flex items-center gap-6">
-            <Link to={"/wishlist"}><IconReceipt2 />
+            {/* <ModeToggle /> */}
+            <Link to={"/wishlist"} className="text-white"><IconReceipt2 />
             </Link>
-            <Link to={"/panier"}><IconBasketCheck /></Link>
+            <Link to={"/panier"} className="text-white"><IconBasketCheck /></Link>
+
             {/* AVATAR */}
             <DropdownMenu>
               <DropdownMenuTrigger>
@@ -85,38 +88,38 @@ export function SiteHeader() {
             </SheetTrigger>
             <SheetContent className="w-full">
               <SheetHeader className="pt-10">
-                <div className="">
-                  <NavLink to={"/"} className="text-2xl">
+                <div className="p-6">
+                  <NavLink to={"/"} className="text-3xl font-black uppercase">
                     Accueil
                   </NavLink>
                 </div>
                 <Separator className="my-4" />
-                <div>
-                  <NavLink to={"/About"} className="text-2xl">
+                <div className="p-6">
+                  <NavLink to={"/About"} className="text-3xl font-black uppercase">
                     Qui sommes-nous
                   </NavLink>
                 </div>
-                <Separator className="my-4" />
-                <div>
-                  <NavLink to={"/Blog"} className="text-2xl">
+                <Separator />
+                <div className="p-6">
+                  <NavLink to={"/Blog"} className="text-3xl font-black uppercase">
                     Le blog
                   </NavLink>
                 </div>
                 <Separator className="my-4" />
-                <div>
-                  <NavLink to={"/Panier"} className="text-2xl">
+                <div className="p-6">
+                  <NavLink to={"/Panier"} className="text-3xl font-black uppercase">
                     Mon panier
                   </NavLink>
                 </div>
                 <Separator className="my-4" />
-                <div>
-                  <Link to={"/Panier"} className="text-2xl">
+                <div className="p-6">
+                  <Link to={"/Panier"} className="text-3xl font-black uppercase">
                     Mon panier
                   </Link>
                 </div>
                 <Separator className="my-4" />
-                <div>
-                  <NavLink to={"/Contact"} className="text-2xl">
+                <div className="p-6">
+                  <NavLink to={"/Contact"} className="text-3xl font-black uppercase">
                     Contact
                   </NavLink>
                 </div>

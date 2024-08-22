@@ -17,87 +17,15 @@ import {
     CardHeader,
     CardTitle,
 } from "@/components/ui/card"
+import { products } from './partials/produit'
 
 
 const Collection: React.FC = () => {
     const { addToCart } = useCart();
 
-    const products = [
-        {
-            id: 1,
-            name: 'Basic Tee',
-            href: <CatalogueDetail />,
-            imageSrc: image1,
-            imageAlt: "Front of men's Basic Tee in black.",
-            price: '$35',
-            color: 'Black',
-        },
-        {
-            id: 2,
-            name: 'Basic Tee',
-            href: <CatalogueDetail />,
-            imageSrc: image2,
-            imageAlt: "Front of men's Basic Tee in black.",
-            price: '$35',
-            color: 'Black',
-        },
-        {
-            id: 3,
-            name: 'Basic Tee',
-            href: <CatalogueDetail />,
-            imageSrc: image3,
-            imageAlt: "Front of men's Basic Tee in black.",
-            price: '$35',
-            color: 'Black',
-        }, {
-            id: 4,
-            name: 'Basic Tee',
-            href: <CatalogueDetail />,
-            imageSrc: image4,
-            imageAlt: "Front of men's Basic Tee in black.",
-            price: '$35',
-            color: 'Black',
-        }, {
-            id: 5,
-            name: 'Basic Tee',
-            htmlFor: <CatalogueDetail />,
-            imageSrc: image5,
-            imageAlt: "Front of men's Basic Tee in black.",
-            price: '$35',
-            color: 'Black',
-        },
-        {
-            id: 6,
-            name: 'Basic Tee',
-            htmlFor: <CatalogueDetail />,
-            imageSrc: image6,
-            imageAlt: "Front of men's Basic Tee in black.",
-            price: '$35',
-            color: 'Black',
-        },
-        {
-            id: 7,
-            name: 'Basic Tee',
-            htmlFor: <CatalogueDetail />,
-            imageSrc: image7,
-            imageAlt: "Front of men's Basic Tee in black.",
-            price: '$35',
-            color: 'Black',
-        },
-        {
-            id: 8,
-            name: 'Basic Tee',
-            htmlFor: <CatalogueDetail />,
-            imageSrc: image8,
-            imageAlt: "Front of men's Basic Tee in black.",
-            price: '$35',
-            color: 'Black',
-        },
-    ];
-
     return (
-        <div className='mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-6 lg:max-w-7xl lg:px-8'>
-            <div className='mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8'>
+        <div className='mx-auto max-w-xl px-4 py-16 sm:px-6 sm:py-6 lg:max-w-7xl lg:px-8'>
+            <div className='mt-4 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-4'>
                 {products.map(product => (
                     <Card key={product.id}>
                         <CardHeader>

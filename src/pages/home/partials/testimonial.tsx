@@ -16,76 +16,82 @@ import Img4 from '@/img/persona/paul.jpg'
 
 const Testimonial = () => {
     return (
-        <Card className="border-none shadow-none">
+        <Card className="border-none shadow-none h-full">
             <CardHeader className="text-center">
                 <CardTitle className="text-3xl">Témoignages</CardTitle>
-                <CardDescription className="">
+                <CardDescription>
                     Ces témoignages montrent comment les produits high-tech de Voytheia peuvent transformer la vie des personnes malvoyantes, en leur offrant autonomie et efficacité dans leurs activités quotidiennes.
                 </CardDescription>
             </CardHeader>
             <CardContent className="flex justify-center w-full mx-auto">
                 <Card className="w-full h-full border-none shadow-none">
-                    <CardContent className="flex justify-center items-center w-full pt-6 h-[700px] mx-auto">
-                        <Tabs defaultValue="account" className="w-[1000px] h-[700px] flex gap-6">
-                            <TabsList className="flex flex-col h-full w-full p-6">
-
+                    <CardContent className="lg:flex justify-center items-center w-full pt-6 h-full mx-auto">
+                        <Tabs defaultValue="account" className="block xl:flex lg:flex xl:w-[1000px] xl:h-[700px] md:h-auto md:w-auto  gap-6">
+                            <TabsList className=" lg:flex-col block h-auto w-full p-6 overflow-scroll">
                                 <TabsTrigger value="lea" className="w-full p-6 text-left">
                                     <div className="text-left w-full">
-                                        <Avatar>
+                                        <Avatar className="hidden xl:block">
                                             <AvatarImage src={Img1} />
                                             <AvatarFallback>CN</AvatarFallback>
                                         </Avatar>
 
                                         <p className="text-xl">Léa Martin</p>
-                                        <p className="text-slate-400">Étudiante en informatique</p>
-                                        <p className="text-slate-400">25 ans</p>
+                                        <div className="hidden xl:block">
+                                            <p className="text-slate-400">Étudiante en informatique</p>
+                                            <p className="text-slate-400">25 ans</p>
+                                        </div>
                                     </div>
                                 </TabsTrigger>
 
                                 <TabsTrigger value="paul" className="w-full p-6 text-left">
                                     <div className="text-left w-full">
-                                        <Avatar>
-                                            <AvatarImage src={Img3} />
+                                        <Avatar className="hidden xl:block">
+                                            <AvatarImage className="hidden xl:block" src={Img3} />
                                             <AvatarFallback>CN</AvatarFallback>
                                         </Avatar>
 
                                         <p className="text-xl">Sophie Durand</p>
-                                        <p className="text-slate-400">Retraitée, ancienne enseignante</p>
-                                        <p className="text-slate-400">42 ans</p>
+                                        <div className="hidden xl:block">
+                                            <p className="text-slate-400">Retraitée</p>
+                                            <p className="text-slate-400">42 ans</p>
+                                        </div>
                                     </div>
                                 </TabsTrigger>
 
                                 <TabsTrigger value="sophie" className="w-full p-6 text-left">
                                     <div className="text-left w-full">
-                                        <Avatar>
-                                            <AvatarImage src={Img2} />
+                                        <Avatar className="hidden xl:block">
+                                            <AvatarImage className="hidden xl:block" src={Img2} />
                                             <AvatarFallback>CN</AvatarFallback>
                                         </Avatar>
 
                                         <p className="text-xl">
                                             Marc Dubois</p>
-                                        <p className="text-slate-400">Musicien</p>
-                                        <p className="text-slate-400">60 ans</p>
+                                        <div className="hidden xl:block">
+                                            <p className="text-slate-400">Musicien</p>
+                                            <p className="text-slate-400">60 ans</p>
+                                        </div>
                                     </div>
                                 </TabsTrigger>
 
                                 <TabsTrigger value="marc" className="w-full p-6 text-left">
                                     <div className="text-left w-full">
-                                        <Avatar>
-                                            <AvatarImage src={Img4} />
+                                        <Avatar className="hidden xl:block">
+                                            <AvatarImage className="hidden xl:block" src={Img4} />
                                             <AvatarFallback>CN</AvatarFallback>
                                         </Avatar>
 
                                         <p className="text-xl">
                                             Paul Lefebvre</p>
-                                        <p>Consultant en ressources humaines</p>
-                                        <p className="text-slate-400">35 ans</p>
+                                        <div className="hidden xl:block">
+                                            <p>Consultant</p>
+                                            <p className="text-slate-400">35 ans</p>
+                                        </div>
                                     </div>
                                 </TabsTrigger>
 
                             </TabsList>
-                            <div className="flex items-center">
-
+                            <div className="flex items-center p-6 h-full">
                                 <TabsContent value="lea">
                                     <div className="items-left font-bold mb-6">
                                         <svg className="h-12  mb-3 text-gray-400 dark:text-gray-600" viewBox="0 0 24 27" fill="none" xmlns="http://www.w3.org/2000/svg">

@@ -1,4 +1,13 @@
 import { ArrowPathIcon, BuildingStorefrontIcon, CheckBadgeIcon, FingerPrintIcon } from '@heroicons/react/24/outline'
+import {
+    Card,
+    CardContent,
+    CardDescription,
+    CardFooter,
+    CardHeader,
+    CardTitle,
+} from "@/components/ui/card"
+
 
 const features = [
     {
@@ -29,8 +38,8 @@ const features = [
 
 const Featured = () => {
     return (
-        <div>
-            <div className="py-24 sm:py-32">
+        <Card className="p-12 h-full border-none">
+            <CardContent>
                 <div className="mx-auto max-w-7xl px-6 lg:px-8">
                     <div className="mx-auto max-w-2xl lg:text-center">
                         <h2 className="text-base font-semibold leading-7 text-indigo-600">Un soutien indispensable</h2>
@@ -57,8 +66,13 @@ const Featured = () => {
                         </dl>
                     </div>
                 </div>
-            </div>
-        </div>
+            </CardContent>
+
+        </Card>
+
+
+
+
     )
 }
 

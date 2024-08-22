@@ -7,7 +7,7 @@ import Banner from "./partials/banner"
 function Catalogue() {
     return (
         <Layout>
-            <Banner />
+            {/* <Banner /> */}
             <CatalogueAll />
         </Layout>
     )

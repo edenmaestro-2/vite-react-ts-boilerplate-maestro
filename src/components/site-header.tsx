@@ -4,7 +4,6 @@ import {
   SheetHeader,
   SheetTrigger,
 } from "@/components/ui/sheet"
-import { Input } from "./ui/input"
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -17,9 +16,8 @@ import { IconReceipt2 } from '@tabler/icons-react';
 import { IconBasketCheck } from '@tabler/icons-react';
 import { Badge } from "@/components/ui/badge"
 import { Link, NavLink } from "react-router-dom"
-// import { Separator } from "@radix-ui/react-dropdown-menu"
 import { Separator } from "./ui/separator"
-import { ModeToggle } from "./mode-toggle"
+import { ModeToggle } from "./mode-toggle";
 
 
 
@@ -50,16 +48,16 @@ export function SiteHeader() {
               <NavLink to={"/contact"} className="text-white">
                 Contact
               </NavLink>
-              {/* <NavLink to={"/teste"}>
+              <NavLink to={"/teste"} className="text-white">
                 teste
-              </NavLink> */}
+              </NavLink>
             </ul>
           </div>
         </div>
         {/* MENU RESTE */}
         <div className="flex gap-6 items-center">
           <div className="flex items-center gap-6">
-            {/* <ModeToggle /> */}
+            <ModeToggle />
             <Link to={"/wishlist"} className="text-white"><IconReceipt2 />
             </Link>
             <Link to={"/panier"} className="text-white"><IconBasketCheck /></Link>
@@ -68,7 +66,7 @@ export function SiteHeader() {
             <DropdownMenu>
               <DropdownMenuTrigger>
                 <Avatar>
-                  <AvatarImage src="https://github.com/shadcn.png" />
+                  <AvatarImage src="" />
                   <AvatarFallback>CN</AvatarFallback>
                 </Avatar>
               </DropdownMenuTrigger>
@@ -81,7 +79,7 @@ export function SiteHeader() {
           </div>
           {/* RESPONSIVE */}
           <Sheet>
-            <SheetTrigger className="xl:hidden lg:hidden">
+            <SheetTrigger className="xl:hidden lg:hidden text-white">
               <svg className="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
                 <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 1h15M1 7h15M1 13h15" />
               </svg>
